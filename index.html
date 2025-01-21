@@ -9,14 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
+    <script defer src="./script.js"></script>
 </head>
 
 <body>
     <div class="bg-hero">
         <header class="header">
-            <p class="logo text-28">Прочно</p>
+            <h2 class="logo text-28">Прочно</h2>
             <ul class="nav">
                 <li class="text-20"><a href="#">Проекты</a></li>
                 <li class="text-20"><a href="#">Галерея</a></li>
@@ -24,7 +26,7 @@
             </ul>
             <div class="nav-social">
                 <a href="#">
-                    <p class="text-24">+7 999 999-99-99</p>
+                    <p class="text-24">+7&nbsp;999&nbsp;999-99-99</p>
                 </a>
                 <a href="#"><img src="./images/tg-icon.png" alt="telegram" width="32"></a>
                 <a href="#"><img src="./images/vk-icon.png" alt="vk" width="32"></a>
@@ -32,18 +34,20 @@
         </header>
         <section class="hero">
             <div class="hero-text">
-                <h1 class="main-header">Энергоэффективный и надежный дом за 70 дней.</h1>
-                <p class="text-32">С чистовой отделкой и коммуникациями от 38 300 ₽/м²!</p>
+                <h1 class="main-title">Энергоэффективный&nbsp;и надежный дом <span
+                        class="marker">за&nbsp;70&nbsp;дней.</span></h1>
+                <p class="hero-text text-32">С&nbsp;чистовой отделкой&nbsp;и коммуникациями
+                    от&nbsp;38&nbsp;300&nbsp;₽/м²!</p>
             </div>
-            <div class="btn-green">
-                <p class="text-24">Выбрать дом</p>
+            <div class="btn">
+                <p class="text-24 btn-text">Выбрать&nbsp;дом</p>
                 <img src="./images/arrow.png" alt="arrow">
             </div>
         </section>
     </div>
     <section class="info">
-        <h2 class="text-42">Каркасные дома комфорт-класса с отделкой
-            под ключ от производителя</h2>
+        <h2 class="text-42">Каркасные дома комфорт-класса с&nbsp;отделкой
+            под&nbsp;ключ от&nbsp;производителя</h2>
         <div class="info-container">
             <div class="info-card">
                 <p class="info-card_header">20 лет</p>
@@ -66,71 +70,51 @@
     <section class="about">
         <div class="about-container">
             <img class="about-img" src="./images/house.png" alt="house">
-            <div class="btn-green">
-                <p class="text-24">Сделать заказ</p>
+            <div class="btn">
+                <p class="text-24 btn-text">Сделать заказ</p>
                 <img src="./images/arrow.png" alt="arrow">
             </div>
         </div>
         <div class="about-container-text">
             <h2 class="text-42 align-left">Модульный дом — это</h2>
-            <div class="about-info-container">
-                <hr class="vertical-line">
-                <div class="about-info">
-                    <p class="green-text">Экономия. На 40-50% дешевле кирпичного или каменного</p>
-                    <p class="about-info_text">Каркасный дом проще и быстрее строится. А еще вы сэкономите на
-                        эксплуатации зимой, отопление дома обойдется значительно дешевле.</p>
-                </div>
+            <div class="about-info">
+                <p class="green-text">Экономия. На 40-50% дешевле кирпичного или каменного</p>
+                <p class="about-info_text">Каркасный дом проще и быстрее строится. А еще вы сэкономите на
+                    эксплуатации зимой, отопление дома обойдется значительно дешевле.</p>
             </div>
-            <div class="about-info-container">
-                <hr class="vertical-line">
-                <div class="about-info">
-                    <p class="green-text">Тепло. Без отопления остывает на -5℃ в сутки</p>
-                    <p class="about-info_text">15см базальтового утеплителя заменяет 2м кирпичной кладки. Нет мостиков
-                        холода, по которым тепло выходит на улицу. Нет кирпича, камня, бетона, которые долго
-                        прогреваются и быстро промерзают.</p>
-                </div>
+            <div class="about-info">
+                <p class="green-text">Тепло. Без отопления остывает на -5℃ в сутки</p>
+                <p class="about-info_text">15см базальтового утеплителя заменяет 2м кирпичной кладки. Нет мостиков
+                    холода, по которым тепло выходит на улицу. Нет кирпича, камня, бетона, которые долго
+                    прогреваются и быстро промерзают.</p>
             </div>
-            <div class="about-info-container">
-                <hr class="vertical-line">
-                <div class="about-info">
-                    <p class="green-text">Строительство зимой без проблем</p>
-                    <p class="about-info_text">Дом строится на винтовых сваях, можно работать даже при минусовых
-                        температурах. Это дает возможность строить круглогодично. Так же вы экономите на стройматериалах
-                        работах. Зимой цены существенно ниже.</p>
-                </div>
+            <div class="about-info">
+                <p class="green-text">Строительство зимой без проблем</p>
+                <p class="about-info_text">Дом строится на винтовых сваях, можно работать даже при минусовых
+                    температурах. Это дает возможность строить круглогодично. Так же вы экономите на стройматериалах
+                    работах. Зимой цены существенно ниже.</p>
             </div>
-            <div class="about-info-container">
-                <hr class="vertical-line">
-                <div class="about-info">
-                    <p class="green-text">Легко достроить</p>
-                    <p class="about-info_text">Когда понадобится, можно быстро пристроить к дому детскую комнату,
-                        террасу или сауну.</p>
-                </div>
+            <div class="about-info">
+                <p class="green-text">Легко достроить</p>
+                <p class="about-info_text">Когда понадобится, можно быстро пристроить к дому детскую комнату,
+                    террасу или сауну.</p>
             </div>
-            <div class="about-info-container">
-                <hr class="vertical-line">
-                <div class="about-info">
-                    <p class="green-text">Любая архитектурная форма и отделка</p>
-                    <p class="about-info_text">Каркас можно построить под любой архитектурный проект, классику или
-                        авангард. Наружная отделка любая: сайдинг, кирпич, камень, блокхаус, штукатурка.</p>
-                </div>
+            <div class="about-info">
+                <p class="green-text">Любая архитектурная форма и отделка</p>
+                <p class="about-info_text">Каркас можно построить под любой архитектурный проект, классику или
+                    авангард. Наружная отделка любая: сайдинг, кирпич, камень, блокхаус, штукатурка.</p>
             </div>
-            <div class="about-info-container">
-                <hr class="vertical-line">
-                <div class="about-info">
-                    <p class="green-text">Отсутствие просадки</p>
-                    <p class="about-info_text">Дом обычно весит до 20 тонн, как фура. Поэтому для такого дома не нужен
-                        тяжелый и дорогой фундамент.</p>
-                </div>
+            <div class="about-info">
+                <p class="green-text">Отсутствие просадки</p>
+                <p class="about-info_text">Дом обычно весит до 20 тонн, как фура. Поэтому для такого дома не нужен
+                    тяжелый и дорогой фундамент.</p>
             </div>
-            <div class="about-info-container">
-                <hr class="vertical-line">
-                <div class="about-info">
-                    <p class="green-text">Возможность строить и отделывать поэтапно</p>
-                    <p class="about-info_text">Удобно, если не хватает денег на все сразу. Поставили каркас, позже
-                        сделали наружную, внутреннюю отделку и коммуникации.</p>
-                </div>
+            <div class="about-info">
+                <p class="green-text">Возможность строить и отделывать поэтапно</p>
+                <p class="about-info_text">Удобно, если не хватает денег на все сразу. Поставили каркас, позже
+                    сделали наружную, внутреннюю отделку и коммуникации.</p>
             </div>
+        </div>
         </div>
     </section>
     <section class="projects">
@@ -145,7 +129,7 @@
                                 <p class="project-card-text">Дата постройки:</p>
                                 <p class="project-card-text weight-500">июнь 2024г.</p>
                             </div>
-                            <div class="project-card-container project-card-bg">
+                            <div class="project-card-container  ">
                                 <p class="project-card-text">Технология <br />
                                     строительства:</p>
                                 <p class="project-card-text weight-500">2024</p>
@@ -155,7 +139,7 @@
                                     материал стен:</p>
                                 <p class="project-card-text weight-500">2024</p>
                             </div>
-                            <div class="project-card-container project-card-bg">
+                            <div class="project-card-container  ">
                                 <p class="project-card-text">Полезная площадь:</p>
                                 <p class="project-card-text weight-500">2024</p>
                             </div>
@@ -163,7 +147,7 @@
                                 <p class="project-card-text">Площадь застройки:</p>
                                 <p class="project-card-text weight-500">2024</p>
                             </div>
-                            <div class="project-card-container project-card-bg">
+                            <div class="project-card-container  ">
                                 <p class="project-card-text">Площадь террасы:</p>
                                 <p class="project-card-text weight-500">2024</p>
                             </div>
@@ -171,26 +155,68 @@
                                 <p class="project-card-text">Высота потолков:</p>
                                 <p class="project-card-text weight-500">2024</p>
                             </div>
-                            <div class="project-card-container project-card-bg">
+                            <div class="project-card-container  ">
                                 <p class="project-card-text">Габариты дома:</p>
                                 <p class="project-card-text weight-500">2024</p>
                             </div>
                         </div>
                         <div class="project-container-info">
                             <p class="project-card-header weight-500">1 000 000 ₽</p>
-                            <div class="btn-green">
-                                <p class="text-24">Заказать</p>
+                            <div class="btn">
+                                <p class="text-24 btn-text">Заказать</p>
                                 <img src="./images/arrow.png" alt="arrow">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="slider">
-                    <img src="./images/project-img.png" alt="" width="892">
+                <div class="swipers-container">
+                    <div class="swiper mySwiper-1" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="./images/project-img.png" alt="Модульный дом">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/project-img.png" alt="Модульный дом">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/project-img.png" alt="Модульный дом">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/project-img.png" alt="Модульный дом">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/project-img.png" alt="Модульный дом">
+                            </div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="swiper swiper-thumbs mySwiper-1-thumbs">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="./images/project-img.png" alt="Модульный дом">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/project-img.png" alt="Модульный дом">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/project-img.png" alt="Модульный дом">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/project-img.png" alt="Модульный дом">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/project-img.png" alt="Модульный дом">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="project-card project-card-padding">
-                <div class="slider">
+                <div class="swiper">
                     <img src="./images/project-img.png" alt="" width="892">
                 </div>
                 <div class="project-card-list">
@@ -201,7 +227,7 @@
                                 <p class="project-card-text">Дата постройки:</p>
                                 <p class="project-card-text weight-500">июнь 2024г.</p>
                             </div>
-                            <div class="project-card-container project-card-bg">
+                            <div class="project-card-container  ">
                                 <p class="project-card-text">Технология <br />
                                     строительства:</p>
                                 <p class="project-card-text weight-500">2024</p>
@@ -211,7 +237,7 @@
                                     материал стен:</p>
                                 <p class="project-card-text weight-500">2024</p>
                             </div>
-                            <div class="project-card-container project-card-bg">
+                            <div class="project-card-container  ">
                                 <p class="project-card-text">Полезная площадь:</p>
                                 <p class="project-card-text weight-500">2024</p>
                             </div>
@@ -219,7 +245,7 @@
                                 <p class="project-card-text">Площадь застройки:</p>
                                 <p class="project-card-text weight-500">2024</p>
                             </div>
-                            <div class="project-card-container project-card-bg">
+                            <div class="project-card-container  ">
                                 <p class="project-card-text">Площадь террасы:</p>
                                 <p class="project-card-text weight-500">2024</p>
                             </div>
@@ -227,15 +253,15 @@
                                 <p class="project-card-text">Высота потолков:</p>
                                 <p class="project-card-text weight-500">2024</p>
                             </div>
-                            <div class="project-card-container project-card-bg">
+                            <div class="project-card-container  ">
                                 <p class="project-card-text">Габариты дома:</p>
                                 <p class="project-card-text weight-500">2024</p>
                             </div>
                         </div>
                         <div class="project-container-info">
                             <p class="project-card-header weight-500">1 000 000 ₽</p>
-                            <div class="btn-green">
-                                <p class="text-24">Заказать</p>
+                            <div class="btn">
+                                <p class="text-24 btn-text">Заказать</p>
                                 <img src="./images/arrow.png" alt="arrow">
                             </div>
                         </div>
@@ -251,7 +277,7 @@
                                 <p class="project-card-text">Дата постройки:</p>
                                 <p class="project-card-text weight-500">июнь 2024г.</p>
                             </div>
-                            <div class="project-card-container project-card-bg">
+                            <div class="project-card-container  ">
                                 <p class="project-card-text">Технология <br />
                                     строительства:</p>
                                 <p class="project-card-text weight-500">2024</p>
@@ -261,7 +287,7 @@
                                     материал стен:</p>
                                 <p class="project-card-text weight-500">2024</p>
                             </div>
-                            <div class="project-card-container project-card-bg">
+                            <div class="project-card-container  ">
                                 <p class="project-card-text">Полезная площадь:</p>
                                 <p class="project-card-text weight-500">2024</p>
                             </div>
@@ -269,7 +295,7 @@
                                 <p class="project-card-text">Площадь застройки:</p>
                                 <p class="project-card-text weight-500">2024</p>
                             </div>
-                            <div class="project-card-container project-card-bg">
+                            <div class="project-card-container  ">
                                 <p class="project-card-text">Площадь террасы:</p>
                                 <p class="project-card-text weight-500">2024</p>
                             </div>
@@ -277,27 +303,27 @@
                                 <p class="project-card-text">Высота потолков:</p>
                                 <p class="project-card-text weight-500">2024</p>
                             </div>
-                            <div class="project-card-container project-card-bg">
+                            <div class="project-card-container  ">
                                 <p class="project-card-text">Габариты дома:</p>
                                 <p class="project-card-text weight-500">2024</p>
                             </div>
                         </div>
                         <div class="project-container-info">
                             <p class="project-card-header weight-500">1 000 000 ₽</p>
-                            <div class="btn-green">
-                                <p class="text-24">Заказать</p>
+                            <div class="btn">
+                                <p class="text-24 btn-text">Заказать</p>
                                 <img src="./images/arrow.png" alt="arrow">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="slider">
+                <div class="swiper">
                     <img src="./images/project-img.png" alt="" width="892">
                 </div>
             </div>
         </div>
-        <div class="btn-green btn-white">
-            <p class="text-24 text-24-green">Сделать заказ</p>
+        <div class="btn btn-white">
+            <p class="text-24 btn-text text-24-green">Посмотреть все&nbsp;проекты</p>
             <img src="./images/arrow.png" alt="arrow">
         </div>
     </section>
@@ -372,6 +398,7 @@
         <p>Сайт mhouse.pro носит информационный характер и не является публичной офертой, определяемой положениями Ст.
             437 ГК РФ.Для получения более точной информации обращайтесь по указанным в контактах телефонам.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
