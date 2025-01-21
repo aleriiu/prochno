@@ -93,11 +93,12 @@ li {
     text-transform: uppercase;
 }
 
-.marker{
+.marker {
     position: relative;
     z-index: 0;
 }
-.marker::before{
+
+.marker::before {
     position: absolute;
     content: '';
     width: 334px;
@@ -125,6 +126,7 @@ li {
     display: flex;
     gap: 1.25rem;
     align-items: baseline;
+    cursor: pointer;
 }
 
 .btn .btn-text {
@@ -169,16 +171,16 @@ li {
     flex-direction: column;
 }
 
-.info-card_header {
+.info-card_title {
     color: #000000;
     font-size: 2rem;
     font-weight: 600;
 }
 
 .info-card_text {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 400;
-    line-height: 1.375rem;
+    line-height: 1.3rem;
     letter-spacing: 0.01em;
     color: #000000;
 }
@@ -253,6 +255,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: 3.75rem;
+    align-items: center;
 }
 
 .projects-container {
@@ -280,7 +283,7 @@ li {
     padding: 0.5rem;
 }
 
-.project-card-header {
+.project-card-title {
     color: #028164;
     font-size: 2rem;
     font-weight: 600;
@@ -303,10 +306,10 @@ li {
     border-radius: 8px;
 }
 
-.project-container-gap {
+.project-container-content {
     display: flex;
     flex-direction: column;
-    /* gap: 1.875rem; */
+    gap: 1.875rem;
 }
 
 .project-container {
@@ -363,7 +366,7 @@ li {
 .swiper-slide img {
     width: 100%;
     border-radius: 14px;
-  
+
 }
 
 
@@ -378,7 +381,6 @@ li {
     flex-direction: column;
     padding: 6.25rem 2.625rem;
     gap: 3.75rem;
-    background-image: url(../images/bg-green.png);
     background-repeat: no-repeat;
     background-position: bottom;
 }
@@ -405,6 +407,94 @@ li {
 
 .about-us-card {
     width: 31%;
-    border: #02816480 2px solid;
+    border: #FFFFFF80 2px solid;
     background-color: inherit;
+}
+
+
+
+
+
+.contacts {
+    display: flex;
+    align-items: center;
+    padding: 6.25rem 2.625rem;
+    justify-content: space-between;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 0 2.375rem;
+}
+
+input[type="text"],
+input[type="number"] {
+    background-color: #EFEFEF;
+    border: 0 solid #EFEFEF;
+    padding: 0.625rem;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.btn-form {
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    background-color: #028164;
+    border: #028164 0 solid;
+    border-radius: 8px;
+    padding: 0.875rem 4rem;
+}
+
+.check {
+    font-size: 0.625rem;
+    font-weight: 300;
+}
+
+span.check {
+    text-decoration: underline;
+}
+
+.check-container {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+}
+
+
+
+
+
+
+/******* СТРАНИЦА КОНТАКТЫ ********/
+
+.text-black {
+    color: #000000;
+}
+
+.bg-grey {
+    background-color: #EFEFEF;
+}
+
+.map img {
+    width: 100%;
+}
+
+input[type="text"] .bg-white,
+input[type="number"] .bg-white {
+    background-color: #FFFFFF;
 }
