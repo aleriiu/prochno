@@ -27,6 +27,8 @@ section,
     border-radius: 14px;
 }
 
+
+
 /***** hero *****/
 
 .bg-hero {
@@ -141,6 +143,7 @@ section,
     cursor: pointer;
     transition: 0.3s ease;
 }
+
 .btn img {
     width: 30px;
     transform: translateX(0);
@@ -356,6 +359,7 @@ section,
     border: #028164 2px solid;
     background-color: #FFFFFF;
 }
+
 .btn-white:hover {
     background-color: #EFEFEF;
 }
@@ -470,8 +474,8 @@ section,
     padding: 0 2.375rem;
 }
 
-input[type="text"],
-input[type="number"] {
+.input-name,
+.input-phone {
     background-color: #EFEFEF;
     border: 0 solid #EFEFEF;
     padding: 0.625rem;
@@ -493,6 +497,11 @@ input[type="number"]::placeholder {
     border: #028164 0 solid;
     border-radius: 8px;
     padding: 0.875rem 4rem;
+    cursor: pointer;
+}
+
+.btn-form:hover {
+    background-color: #0F5F4D;
 }
 
 .check {
@@ -514,6 +523,7 @@ span.check {
 footer {
     background-color: #163730;
 }
+
 .footer-container {
     max-width: 1440px;
     padding: 6.25rem 2.625rem 2.5rem 2.625rem;
@@ -522,39 +532,47 @@ footer {
     flex-direction: column;
     gap: 2rem;
 }
+
 .footer-menu-contacts {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
 }
+
 .footer-menu-contacts .nav {
     position: static;
     transform: translateX(0);
 }
+
 .footer-menu {
     display: flex;
     gap: 5rem;
     align-items: center;
-    padding-bottom:  2rem;
+    padding-bottom: 2rem;
     border-bottom: 0.5px solid #FFFFFF;
 }
+
 .footer-menu-contacts .tel {
     font-size: 2.25rem;
 }
+
 .footer-contacts {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 0.5rem;
 }
+
 .footer-contacts .socials {
     display: flex;
     gap: 0.5rem;
 }
+
 .footer-contacts .socials img {
     width: 30px;
 }
+
 .footer-info-remark {
     font-size: 0.75rem;
     font-weight: 200;
@@ -577,11 +595,49 @@ footer {
     background-color: #EFEFEF;
 }
 
+.map {
+    position: relative;
+}
+
+.map-container {
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    padding: 1.25rem;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.map-container-list {
+    display: flex;
+    gap: 0.5rem;
+}
+
 .map img {
     width: 100%;
 }
 
-input[type="text"] .bg-white,
-input[type="number"] .bg-white {
+.bg-white {
     background-color: #FFFFFF;
+}
+
+.map-container-list img {
+    width: 24px;
+}
+
+.map-text {
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.01em;
+}
+
+.nav-underline {
+    color: #028164;
+    text-decoration: underline;
 }

@@ -13,7 +13,7 @@
         <ul class="nav">
             <li class="text-20 text-black"><a class="text-20 text-black" href="#">Проекты</a></li>
             <li class="text-20 text-black"><a class="text-20 text-black" href="#">Галерея</a></li>
-            <li class="text-20 text-black"><a class="text-20 text-black" href="#">Контакты</a></li>
+            <li class="text-20 text-black nav-underline"><a class="text-20 text-black nav-underline" href="#">Контакты</a></li>
         </ul>
         <div class="nav-social">
             <a href="#">
@@ -25,14 +25,32 @@
     </header>
     <section class="map bg-grey">
         <img src="./images/map.jpeg" alt="карта">
+        <div class="map-container">
+            <div class="map-container-list">
+                <img src="./images/map-icon.png" alt="иконка" width="24">
+                <p class="map-text">г. Санкт-Петербург, ул. Репищева, д. 10, корп. 2</p>
+            </div>
+            <div class="map-container-list">
+                <img src="./images/calendar-icon.png" alt="иконка" width="24">
+                <p class="map-text">10:00 - 22:00 Ежедневно, без выходных</p>
+            </div>
+            <div class="map-container-list">
+                <img src="./images/phone-icon.png" alt="иконка" width="24">
+                <a class="map-text" href="">+7 999 999-99-99</a>
+            </div>
+            <div class="map-container-list">
+                <img src="./images/mail-icon.png" alt="иконка" width="24">
+                <a class="map-text" href="">qwerty@mail.ru</a>
+            </div>
+        </div>
     </section>
     <section class="contacts bg-grey">
         <img src="./images/project-img.png" alt="" width="892">
         <div class="form-container">
             <h2 class="text-42">Оставить заявку</h2>
             <form class="form">
-                <input type="text" placeholder="Имя" class="bg-white">
-                <input type="number" placeholder="Телефон" class="bg-white">
+                <input type="text" placeholder="Имя" class="input-name bg-white">
+                <input type="number" placeholder="Телефон" class="input-phone bg-white">
                 <div class="check-container">
                     <input type="checkbox" id="check"><label class="check" for="check">Я соглашаюсь с <span class="check">политикой
                             конфиденциальности</span></label>
@@ -41,5 +59,34 @@
             </form>
         </div>
     </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-menu-contacts">
+                <div class="footer-menu">
+                    <h2 class="logo text-28"><a class="logo text-28" href="./index.html">Прочно</a></h2>
+                    <ul class="nav">
+                        <li class="text-20"><a class="text-20" href="#">Проекты</a></li>
+                        <li class="text-20"><a class="text-20" href="#">Галерея</a></li>
+                        <li class="text-20"><a class="text-20" href="./contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <a href="#">
+                        <p class="text-24 tel">+7&nbsp;999&nbsp;999-99-99</p>
+                    </a>
+                    <div class="socials">
+                        <a href="#"><img src="./images/tg-icon.png" alt="telegram"></a>
+                        <a href="#"><img src="./images/vk-icon.png" alt="vk"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>ИП Гендлин Юрий Максимович<br>ИНН 780107539268<br>ОГРНИП 321784700014744<br>ОКПО 2005094935
+                </p>
+                <p class="footer-info-remark">Сайт mhouse.pro носит информационный характер и не является публичной офертой, определяемой
+                    положениями Ст. 437 ГК РФ.<br>Для получения более точной информации обращайтесь по указанным в контактах телефонам.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
