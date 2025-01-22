@@ -78,7 +78,6 @@
     }
 
     .map-container {
-        left: 35%;
         gap: 1.5rem;
     }
 
@@ -295,6 +294,10 @@
     }
     .swiper-thumbs .swiper-slide {
         width: calc(20% - 6.5px) !important;
+    }
+
+    .map {
+        padding: 0;
     }
 }
 
