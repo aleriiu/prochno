@@ -55,6 +55,10 @@
         left: 35%;
         gap: 1.5rem;
     }
+
+    .gallery-item {
+        width: 47%;
+    }
 }
 
 @media (max-width: 790px) {
@@ -155,6 +159,10 @@
         font-size: 1rem;
         line-height: 1.2rem;
     }
+
+    .gallery-item {
+        width: 46%;
+    }
 }
 
 @media screen and (max-width: 570px) {
@@ -245,6 +253,10 @@
         width: 62%;
         left: 37%;
         top: 49%;
+    }
+
+    .gallery-item {
+        width: 100%;
     }
 }
 
