@@ -38,5 +38,6 @@ createSwiper(".mySwiper-1", ".mySwiper-thumbs-1");
 createSwiper(".mySwiper-2", ".mySwiper-thumbs-2");
 createSwiper(".mySwiper-3", ".mySwiper-thumbs-3");
 createSwiper(".mySwiper-4", ".mySwiper-thumbs-4");
+createSwiper(".mySwiper-5", ".mySwiper-thumbs-5");
 
 
