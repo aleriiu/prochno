@@ -70,11 +70,26 @@ section,
     transform: translateX(-50%);
 }
 
+.nav li a::after {
+    display: block;
+    content: '';
+    border-bottom: solid 1px #028164;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
 .text-24 {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.75rem;
     color: #FFFFFF;
+}
+.nav li a:hover:after {
+    transform: scaleX(1);
+}
+.nav li a.text-black:hover,
+.nav li a:hover {
+    color: #028164 !important;
 }
 
 .nav-social {
@@ -657,9 +672,11 @@ footer {
     letter-spacing: 0.01em;
 }
 
-.nav-underline {
+a.nav-underline:after {
+    transform: scaleX(1) !important;
+}
+a.nav-underline {
     color: #028164;
-    text-decoration: underline;
 }
 
 /******* СТРАНИЦА ГАЛЕРЕЯ ********/
