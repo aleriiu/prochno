@@ -610,6 +610,10 @@ footer {
     background-color: #EFEFEF;
 }
 
+.mobile-map {
+    display: none;
+}
+
 .map {
     position: relative;
 }
@@ -618,13 +622,14 @@ footer {
     position: absolute;
     background-color: #FFFFFF;
     border-radius: 14px;
-    padding: 1.25rem;
-    top: 162px;
+    padding: 2rem 1.25rem;
+    top: 50%;
     left: 42px;
     transform: translate(0);
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    transform: translateY(-50%);
 }
 
 .map-container-list {
