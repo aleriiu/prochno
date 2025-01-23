@@ -21,7 +21,7 @@ function createSwiper(swiperSelector, swiperMiniSelector) {
       });
       
       const swiper = new Swiper(swiperSelector, {
-        spaceBetween: 0,
+        spaceBetween: 10,
         slidesPerView: 'auto',
         navigation: {
           nextEl: ".swiper-button-next",

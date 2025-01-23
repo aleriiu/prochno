@@ -149,6 +149,14 @@ section,
     align-items: baseline;
     cursor: pointer;
     transition: 0.3s ease;
+    position: relative;
+}
+.btn-link {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .btn img {
@@ -729,44 +737,30 @@ a.nav-underline {
     position: relative;
 }
 
-.popup-image-wrapper span {
+.popup-image-wrapper #close {
     position: absolute;
-    top: 0;
+    top: 15px;
     right: 15px;
     font-size: 4.5rem;
+    cursor: pointer;
 }
 
 .arrow {
-    width: 30%;
-    height: 100%;
-    font-size: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    user-select: none;
+    height: 100%;
+    width: 20%;
 }
 
+.arrow-svg {
+    user-select: none;
+    color: #333333 !important;
+}
 .popup-image-wrapper img {
-    max-width: 60%;
+    max-width: 75%;
 }
-
-.arrow {
-    width: 30%;
-    height: 100%;
-    font-size: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;
-}
-
-#close {
-    cursor: pointer;
-}
-
-
 
 .policy {
     display: flex;

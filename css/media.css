@@ -202,6 +202,26 @@
     .gallery-item {
         width: 46%;
     }
+    .popup-image-wrapper img {
+        max-width: 100%;
+    }
+    .arrow {
+        position: absolute;
+        height: 55px;
+        width: 55px;
+        top: 50%;
+        z-index: 2;
+        transform: translateY(-50%);
+    }
+    .arrow-svg{
+        color: #FFFFFF !important;
+    }
+    .arrow-prev{
+        left: 0;
+    }
+    .arrow-next{
+        right: 0;
+    }
 }
 
 @media screen and (max-width: 570px) {
