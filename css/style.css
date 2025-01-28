@@ -338,9 +338,17 @@ section,
     padding: 0.5rem;
 }
 
+.project-card-container__price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 0.5rem;
+}
+
 .project-card-title {
     color: #028164;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     letter-spacing: 0.01em;
 }
@@ -350,6 +358,10 @@ section,
     font-size: 1.25rem;
     font-weight: 400;
     letter-spacing: 0.01em;
+}
+
+.project-card-text-right {
+    text-align: right;
 }
 
 .weight-500 {
