@@ -543,7 +543,7 @@ input[type="number"]::placeholder {
     font-weight: 400;
     letter-spacing: 0.01em;
     background-color: #028164;
-    border: #028164 0 solid;
+    border: 2px solid #028164;
     border-radius: 8px;
     padding: 0.875rem 4rem;
     cursor: pointer;
@@ -782,3 +782,14 @@ a.nav-underline {
     gap: 3.75rem;
     align-items: center;
 }
+
+.project-card-container__price .project-card-title:first-child{
+    font-size: 1.25rem;
+}
+.price-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 90%;
+}
+

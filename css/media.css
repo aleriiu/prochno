@@ -333,6 +333,10 @@
     .map {
         padding: 0;
     }
+
+    .project-card-container__price .project-card-title:first-child {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 376px) {}
