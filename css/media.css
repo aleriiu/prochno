@@ -337,6 +337,13 @@
     .project-card-container__price .project-card-title:first-child {
         font-size: 1rem;
     }
+    .logo img {
+        width: 76px;
+    }
 }
 
-@media (max-width: 376px) {}
+@media (max-width: 376px) {
+    .project-card {
+        font-size: 0.875rem;
+    }
+}

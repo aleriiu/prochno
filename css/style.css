@@ -65,7 +65,7 @@ section,
     gap: 1.875rem;
     position: absolute;
     z-index: 1;
-    top: 28px;
+    top: 38px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -791,5 +791,9 @@ a.nav-underline {
     flex-direction: column;
     gap: 0;
     width: 90%;
+}
+
+.logo img {
+    width: 100px;
 }
 
